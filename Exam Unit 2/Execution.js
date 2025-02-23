@@ -9,4 +9,3 @@ function square(number) {
 console.log(square(2));
 console.log(square(16));
 
-//testing commit
