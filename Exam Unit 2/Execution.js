@@ -313,3 +313,12 @@ if (node === null) return 0;
 return 
 }
 
+//number of nodes
+
+function numberNodes(node) {
+    if (node === null) return 0;
+    return 1 + numberNodes(node.left) + numberNodes(node.right);
+}
+
+console.log(numberNodes(nodeOne));
+console.log(numberNodes(nodeTwo));
