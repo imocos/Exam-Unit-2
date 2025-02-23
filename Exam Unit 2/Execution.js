@@ -35,3 +35,10 @@ function cube(number) {
 console.log(cube(2));
 console.log(cube(10));
 
+//function that returns area of a circle given the radius
+
+function areaCircleFromRadius(number) {
+    return number * number * Math.PI;
+}
+
+console.log(areaCircleFromRadius(10));
