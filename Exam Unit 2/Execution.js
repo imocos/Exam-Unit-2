@@ -1060,7 +1060,7 @@ console.log(before2004(books));
 
 function isbnForAuthor(books, authorName) {
     return books
-                .filter(book => book.author.toLowerCase() === authorName.toLowerCase())
+                .filter(book => book.author.toLowerCase().includes(authorName.toLowerCase()))
                 .map(book => book.isbn);
 }
 
