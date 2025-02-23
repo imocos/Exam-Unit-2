@@ -1029,6 +1029,8 @@ function booksThe(books) {
 
 console.log(booksThe(books));
 
+//books with authors with "t"
+
 function authorT(books) {
     return books.filter(book => 
         book.author.toLowerCase().includes("t") &&
@@ -1038,8 +1040,18 @@ function authorT(books) {
 
 console.log(authorT(books));
 
+//count books published after 1992
+
 function after1992(books) {
     return books.filter(book => book.publication_year > 1992).length;
 }
 
 console.log(after1992(books));
+
+//count books published before 2004
+
+function before2004(books) {
+    return books.filter(book => book.publication_year < 2004).length;
+}
+
+console.log(before2004(books));
