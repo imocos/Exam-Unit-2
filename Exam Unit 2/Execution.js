@@ -1030,7 +1030,10 @@ function booksThe(books) {
 //console.log(booksThe(books));
 
 function authorT(books) {
-    return books.filter(book => book.author.toLowerCase().includes("t"));
+    return books.filter(book => 
+        book.author.toLowerCase().includes("t") &&
+        !book.author.toLowerCase().includes("translated")
+    );
 }
 
 console.log(authorT(books));
