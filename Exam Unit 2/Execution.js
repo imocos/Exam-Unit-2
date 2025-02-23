@@ -16,3 +16,12 @@ function convertInchToMili(number) {
 }
 
 console.log(convertInchToMili(10));
+
+//function that returns root of a number
+
+function root(number) {
+    return Math.sqrt(number);
+}
+
+console.log(root(25));
+console.log(root(625));
