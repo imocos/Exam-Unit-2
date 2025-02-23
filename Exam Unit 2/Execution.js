@@ -1055,3 +1055,13 @@ function before2004(books) {
 }
 
 console.log(before2004(books));
+
+//Return the isbn number of all the books for a given author
+
+function isbnForAuthor(books, authorName) {
+    return books
+                .filter(book => book.author.toLowerCase() === authorName.toLowerCase())
+                .map(book => book.isbn);
+}
+
+console.log(isbnForAuthor(books, "Marcus Aurelius"));
