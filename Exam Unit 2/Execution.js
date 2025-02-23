@@ -1065,3 +1065,20 @@ function isbnForAuthor(books, authorName) {
 }
 
 console.log(isbnForAuthor(books, "Marcus Aurelius"));
+console.log(isbnForAuthor(books, "Terry Pratchett"));
+
+//sort books alphabetically
+
+function sortBooksAlphabetical(books) {
+    return books.slice().sort((a,b) => a.title.localeCompare(b.title));
+}
+
+console.log(sortBooksAlphabetical(books));
+
+//sort books chronologically
+
+function sortBooksChronological(books) {
+    return  books.slice().sort((a,b) => a.publication_year - b.publication_year);
+}
+
+console.log(sortBooksChronological(books));
