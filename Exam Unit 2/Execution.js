@@ -122,7 +122,7 @@ console.log(flattenArray(complexArray));
 
 //function for nodes
 
-const node = {
+const nodeOne = {
     "value": 281,
     "left": null,
     "right": {
@@ -303,5 +303,13 @@ function sumNodes(node) {
     return node.value + sumNodes(node.left) + sumNodes(node.right);
 }
 
-console.log(sumNodes(node));
+console.log(sumNodes(nodeOne));
 console.log(sumNodes(nodeTwo));
+
+//Calculate max depth of the node tree
+
+function depth(node) {
+if (node === null) return 0;
+return 
+}
+
