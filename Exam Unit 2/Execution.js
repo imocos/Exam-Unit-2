@@ -310,8 +310,11 @@ console.log(sumNodes(nodeTwo));
 
 function depth(node) {
 if (node === null) return 0;
-return 
+return 1 + Math.max(depth(node.left), depth(node.right));
 }
+
+console.log(depth(nodeOne));
+console.log(depth(nodeTwo));
 
 //number of nodes
 
