@@ -284,9 +284,24 @@ const node = {
     }
 };
 
+const nodeTwo = {
+    value: 67, // Level 1
+    left: { value: 765, left: null, right: null }, // Level 2
+    right: {
+      value: 167, // Level 2
+      left: {
+        value: 564, // Level 3
+        left: null,
+        right: { value: 379, left: null, right: null } // Level 4
+      },
+      right: null
+    }
+  };
+
 function sumNodes(node) {
     if (node === null) return 0;
     return node.value + sumNodes(node.left) + sumNodes(node.right);
 }
 
 console.log(sumNodes(node));
+console.log(sumNodes(nodeTwo));
