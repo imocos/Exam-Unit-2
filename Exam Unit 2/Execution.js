@@ -1027,7 +1027,7 @@ function booksThe(books) {
     return books.filter(book => book.title.toLowerCase().startsWith("the "));
 }
 
-//console.log(booksThe(books));
+console.log(booksThe(books));
 
 function authorT(books) {
     return books.filter(book => 
@@ -1037,3 +1037,9 @@ function authorT(books) {
 }
 
 console.log(authorT(books));
+
+function after1992(books) {
+    return books.filter(book => book.year > 1992).length;
+}
+
+console.log(after1992(books));
