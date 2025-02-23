@@ -25,3 +25,13 @@ function root(number) {
 
 console.log(root(25));
 console.log(root(625));
+
+//function that returns the cube of a number
+
+function cube(number) {
+    return number * number * number;
+}
+
+console.log(cube(2));
+console.log(cube(10));
+
