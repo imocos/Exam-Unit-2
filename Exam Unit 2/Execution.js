@@ -56,12 +56,9 @@ console.log(greet(name));
 //there might be a better way to do this
 
 //function to flatten an array of integers
-const array = [1, 2, 3,
-    4, 5, 6,
-    7, 8, 9
-];
 
-const arr = [
+
+const complexArray = [
     6410,
     2831,
     5049,
@@ -117,8 +114,8 @@ const arr = [
   ];
 
 function flattenArray(arr) {
-    return arr.flatMap();
+    return arr.flat(Infinity);
 
 }
 
-console.log(flattenArray(arr));
+console.log(flattenArray(complexArray));
