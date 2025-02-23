@@ -1039,7 +1039,7 @@ function authorT(books) {
 console.log(authorT(books));
 
 function after1992(books) {
-    return books.filter(book => book.year > 1992).length;
+    return books.filter(book => book.publication_year > 1992).length;
 }
 
 console.log(after1992(books));
