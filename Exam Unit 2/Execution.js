@@ -1027,4 +1027,10 @@ function booksThe(books) {
     return books.filter(book => book.title.toLowerCase().startsWith("the "));
 }
 
-console.log(booksThe(books));
+//console.log(booksThe(books));
+
+function authorT(books) {
+    return books.filter(book => book.author.toLowerCase().includes("t"));
+}
+
+console.log(authorT(books));
