@@ -42,3 +42,15 @@ function areaCircleFromRadius(number) {
 }
 
 console.log(areaCircleFromRadius(10));
+
+//function that returns a greeting given the name
+
+let name = "Michael";
+
+function greet(name) {
+    return "Greetings, " + name + "!";
+}
+
+console.log(greet(name));
+
+//there might be a better way to do this
