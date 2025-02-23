@@ -1082,3 +1082,21 @@ function sortBooksChronological(books) {
 }
 
 console.log(sortBooksChronological(books));
+
+//sort by authors first name
+
+function authorFirstName(books) {
+    return books
+                .slice().sort((a,b) => a.author.split("")[0].localeCompare(b.author.split("")[0]));
+}
+
+console.log(authorFirstName(books));
+
+//sort by authors last name
+
+function authorLastName(books) {
+    return books
+                .slice().sort((a,b) => a.author.split("")[1].localeCompare(b.author.split("")[1]));
+}
+
+console.log(authorLastName(books));
